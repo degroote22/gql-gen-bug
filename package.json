@@ -1,0 +1,19 @@
+{
+  "name": "bug44",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "gen": "gql-gen --require ts-node/register --template typescript --schema ./src/importSchema.js --out ./src/typings/ \"./src/**/*.ts*\""
+  },
+  "devDependencies": {
+    "graphql": "^0.13.2",
+    "graphql-code-generator": "^0.9.1",
+    "graphql-codegen-typescript-template": "^0.9.1"
+  },
+  "dependencies": {
+    "graphql-import": "^0.6.0",
+    "ts-node": "^6.1.0",
+    "typescript": "^2.9.1"
+  }
+}
